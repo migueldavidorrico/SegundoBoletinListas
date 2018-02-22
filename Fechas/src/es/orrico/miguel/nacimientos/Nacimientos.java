@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 
 public class Nacimientos {
@@ -29,6 +30,14 @@ public class Nacimientos {
             }
         });
         System.out.println(personas);
+        Iterator<Persona> iterator=personas.iterator();
+        Persona primera=iterator.next();
+        System.out.println(primera);
+        Persona otra;
+        while((otra=iterator.next()).mismoCumple(primera)){
+            System.out.println(otra);
+
+        }
 
     }
 }

@@ -31,5 +31,11 @@ public class Persona {
                 ", fechaNacimiento=" + fechaNacimiento +
                 '}';
     }
+    public boolean mismoCumple(Persona p){
+        if(p==null){
+            return false;
+        }
+        return p.getMes().equals(this.getMes()) && p.getDia() == this.getDia();
+    }
 
 }

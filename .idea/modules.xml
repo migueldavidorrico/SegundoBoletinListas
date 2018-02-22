@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Fechas/Fechas.iml" filepath="$PROJECT_DIR$/Fechas/Fechas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POOTeoria/POOTeoria.iml" filepath="$PROJECT_DIR$/POOTeoria/POOTeoria.iml" />
       <module fileurl="file://$PROJECT_DIR$/Fechas/Palabras.iml" filepath="$PROJECT_DIR$/Fechas/Palabras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PersonasVentana/PersonasVentana.iml" filepath="$PROJECT_DIR$/PersonasVentana/PersonasVentana.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SegundoBoletinListas.iml" filepath="$PROJECT_DIR$/.idea/SegundoBoletinListas.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sustituciones/Sustituciones.iml" filepath="$PROJECT_DIR$/Sustituciones/Sustituciones.iml" />
     </modules>
