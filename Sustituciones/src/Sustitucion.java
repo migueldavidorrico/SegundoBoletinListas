@@ -23,11 +23,29 @@ public class Sustitucion {
     public char getSustituido() {
         return sustituido;
     }
-    public void aplicaCambio(){
-        this.numeroVeces--;
+    public char aplicaCambio(char c){
+        if(numeroVeces==0){
+            return c;
+        }
+        if(c==this.getOriginal()){
+            numeroVeces--;
+            return this.getSustituido();
+        }
+        return c;
+
     }
 
     public int getNumeroVeces() {
         return numeroVeces;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Sustitucion{");
+        sb.append("original=").append(original);
+        sb.append(", sustituido=").append(sustituido);
+        sb.append(", numeroVeces=").append(numeroVeces);
+        sb.append('}');
+        return sb.toString();
     }
 }

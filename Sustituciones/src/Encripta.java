@@ -17,6 +17,7 @@ public class Encripta {
         while (iterator.hasNext()){
             sustituciones.add(new Sustitucion(iterator.next().charAt(0),iterator.next().charAt(0),3));
         }
+        System.out.println(sustituciones);
         String original="prueba para sustituir con muchas as para probar el número de sustituciones";
         String cambiada="";
         for (int i = 0; i < original.length(); i++) {
@@ -29,11 +30,11 @@ public class Encripta {
     private static char cambia(char c) {
         for (Sustitucion s :
                 sustituciones) {
-            if(s.getOriginal()==c && s.getNumeroVeces()>0){
-                s.aplicaCambio();
-                return s.getSustituido();
+            char nuevo = s.aplicaCambio(c);
+            if (nuevo != c) {
+                return nuevo;
             }
-            }
+        }
         return c;
     }
 }
